@@ -8,7 +8,7 @@ from pandasai import PandasAI
 load_dotenv()
 
 
-openai_api_key = os.getenv("OPENAI_API_KEY")
+openai_api_key = os.getenv("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")
 
 
 def chat_with_csv(df,prompt):
@@ -22,7 +22,7 @@ st.set_page_config(layout='wide')
 
 st.title("ChatCSV powered by LLM")
 
-input_csv = st.file_uploader("Upload your CSV file", type=['csv'])
+input_csv = st.file_uploader("automated_dataset", type=['csv'])
 
 if input_csv is not None:
 
